@@ -28,22 +28,22 @@ O AWS CloudFormation Designer foi atualizado para o **AWS Application Composer**
 ### **Principais Funcionalidades do Application Composer:**
 
 1. **Design Visual**:
-   - O Application Composer permite a criação de infraestruturas arrastando e soltando componentes em um canvas visual, gerando automaticamente o código YAML correspondente. Você pode alternar entre a visualização do canvas e a edição direta do código, com mudanças sincronizadas automaticamente【17†source】【19†source】.
+   - O Application Composer permite a criação de infraestruturas arrastando e soltando componentes em um canvas visual, gerando automaticamente o código YAML correspondente. Você pode alternar entre a visualização do canvas e a edição direta do código, com mudanças sincronizadas automaticamente [Amazon Web Services, Inc.](https://aws.amazon.com/blogs/compute/visually-design-your-application-with-aws-application-composer/)​ [AWS Community](https://community.aws/content/2dukXTxyIrXK6vHPARBL40BZQxT/deploy-sam-application-composer).
 
 2. **Integração com o CloudFormation**:
-   - Agora, o Application Composer pode ser acessado diretamente do console do AWS CloudFormation, onde você pode visualizar, criar e atualizar templates. Isso integra a visualização e edição de templates ao fluxo de trabalho de criação de stacks no CloudFormation【18†source】.
+   - Agora, o Application Composer pode ser acessado diretamente do console do AWS CloudFormation, onde você pode visualizar, criar e atualizar templates. Isso integra a visualização e edição de templates ao fluxo de trabalho de criação de stacks no CloudFormation [Amazon AWS Documentation](https://docs.aws.amazon.com/application-composer/latest/dg/what-is-composer.html).
 
 3. **Conexões Automáticas**:
-   - Ao conectar diferentes recursos no canvas, como Lambda e DynamoDB, o Application Composer automaticamente atualiza o template com a configuração correta, facilitando a integração entre serviços e minimizando erros manuais【19†source】.
+   - Ao conectar diferentes recursos no canvas, como Lambda e DynamoDB, o Application Composer automaticamente atualiza o template com a configuração correta, facilitando a integração entre serviços e minimizando erros manuais [AWS Community](https://community.aws/content/2dukXTxyIrXK6vHPARBL40BZQxT/deploy-sam-application-composer).
 
 4. **Configuração Detalhada**:
-   - Cada componente adicionado ao canvas pode ser configurado detalhadamente através do painel de propriedades, onde é possível ajustar as configurações e propriedades dos recursos【18†source】【19†source】.
+   - Cada componente adicionado ao canvas pode ser configurado detalhadamente através do painel de propriedades, onde é possível ajustar as configurações e propriedades dos recursos[Amazon AWS Documentation](https://docs.aws.amazon.com/application-composer/latest/dg/what-is-composer.html), [AWS Community](https://community.aws/content/2dukXTxyIrXK6vHPARBL40BZQxT/deploy-sam-application-composer)..
 
 5. **Grupos de Funções**:
-   - Para melhor organização, funções Lambda relacionadas podem ser agrupadas, facilitando a visualização e o gerenciamento dentro do canvas. Você pode personalizar esses grupos para refletir a lógica do seu aplicativo【19†source】.
+   - Para melhor organização, funções Lambda relacionadas podem ser agrupadas, facilitando a visualização e o gerenciamento dentro do canvas. Você pode personalizar esses grupos para refletir a lógica do seu aplicativo [AWS Community](https://community.aws/content/2dukXTxyIrXK6vHPARBL40BZQxT/deploy-sam-application-composer)..
 
 6. **Melhorias na Experiência do Usuário**:
-   - A interface do Application Composer foi otimizada para facilitar a criação de templates complexos, com sugestões automáticas e boas práticas integradas, como a ativação de logging e monitoramento para funções Lambda【19†source】.
+   - A interface do Application Composer foi otimizada para facilitar a criação de templates complexos, com sugestões automáticas e boas práticas integradas, como a ativação de logging e monitoramento para funções Lambda [AWS Community](https://community.aws/content/2dukXTxyIrXK6vHPARBL40BZQxT/deploy-sam-application-composer)..
 
 Essa atualização oferece uma experiência mais integrada e intuitiva para os desenvolvedores que utilizam o AWS CloudFormation para gerenciar infraestruturas complexas, especialmente em arquiteturas serverless.  
 
