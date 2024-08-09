@@ -1,7 +1,6 @@
 Cloudformation 
 =====================
 
-### AWS CloudFormation: Visão Geral
 
 **AWS CloudFormation** é um serviço que permite modelar, provisionar e gerenciar recursos da AWS e de terceiros por meio de arquivos de configuração. Esses arquivos são descritos em formato JSON ou YAML, e você pode usar o CloudFormation para automatizar e orquestrar a criação e a gestão de sua infraestrutura de nuvem.
 
