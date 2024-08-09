@@ -18,6 +18,45 @@ Uma **Stack** no CloudFormation é um conjunto de recursos da AWS que são criad
 
 Um **StackSet** é uma coleção de Stacks que você pode gerenciar de forma centralizada em várias contas da AWS e regiões. Isso é útil para organizações que precisam replicar a mesma infraestrutura em ambientes diferentes ou em diferentes partes da organização.
 
+No AWS CloudFormation, um **template** é um arquivo de configuração que define a infraestrutura desejada na nuvem. Esse arquivo pode ser escrito nos formatos JSON ou YAML e serve como um plano ou blueprint para a criação e gestão de recursos na AWS. 
+
+### Estrutura de um Template CloudFormation
+
+Um template CloudFormation é composto por vários blocos ou seções, cada um desempenhando um papel específico na definição da infraestrutura:
+
+1. **AWSTemplateFormatVersion**: 
+   - Indica a versão do formato do template. Embora opcional, ajuda a assegurar compatibilidade com versões futuras do CloudFormation.
+
+2. **Description**:
+   - Proporciona uma breve descrição do que o template faz. Essa seção é opcional e serve para documentar a finalidade do template.
+
+3. **Resources**:
+   - Esta é a seção mais importante, onde você define todos os recursos da AWS que deseja criar e gerenciar. Cada recurso é especificado com um nome lógico, tipo (por exemplo, `AWS::EC2::Instance` para uma instância EC2), e suas propriedades.
+
+4. **Parameters**:
+   - Permite a personalização do template fornecendo variáveis que podem ser definidas no momento da criação da Stack. Por exemplo, você pode parametrizar o tipo de instância EC2 ou o nome de um bucket S3.
+
+5. **Mappings**:
+   - Fornece uma maneira de mapear valores, como AMIs específicas para diferentes regiões. Essa seção é útil para criar templates reutilizáveis que dependem de dados específicos de regiões.
+
+6. **Outputs**:
+   - Define os valores que serão retornados ao final da criação da Stack. Isso pode incluir informações como IDs de recursos, URLs, ou qualquer outro dado relevante gerado durante a criação da infraestrutura.
+
+7. **Conditions**:
+   - Permite a criação de lógica condicional dentro do template. Por exemplo, você pode criar condições que determinem se certos recursos devem ser criados com base em parâmetros ou variáveis ambientais.
+
+8. **Metadata**:
+   - Contém informações adicionais sobre os recursos, como instruções para os desenvolvedores ou detalhes sobre o uso do template.
+
+9. **Transform**:
+   - Uma seção especial usada para incluir macros ou expandir o template com transformações como o AWS Serverless Application Model (SAM).
+
+### Como Funciona na Prática?
+
+Quando você usa um template no CloudFormation, ele é submetido ao serviço para criar uma **Stack**, que é a instância concreta da infraestrutura definida no template. O CloudFormation lê o template, interpreta os recursos e as dependências, e cria, atualiza ou exclui esses recursos de forma orquestrada.
+
+Os templates permitem que toda a infraestrutura seja tratada como código (Infrastructure as Code), facilitando a replicação, versionamento, e auditoria da infraestrutura ao longo de seu ciclo de vida.
+
 ### Exemplo de Criação de uma Instância EC2
 
 #### Exemplo em YAML
