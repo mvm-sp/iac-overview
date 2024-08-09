@@ -126,7 +126,7 @@ O AWS **CloudFormation** é um serviço que fornece aos desenvolvedores e empres
 *   Implementa e gerencia o grupo de recursos da [**AWS**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) e de terceiros agrupados em Pilhas.
 *   Permite que o estado e as dependências dos recursos sejam gerenciados em conjunto.
 *   Fornece um conjunto de scripts de inicialização de aplicações que permitem a instalação de pacotes, arquivos e serviços nas instâncias do EC2
-*   Permite integração com outros frameworks, entre eles o [**Chef**](02-1-1%20Chef.md), [**Puppet**](02-1-2%20Puppet.md) e [**Terraform**](02-1-5%20Terraform.md)
+*   Permite integração com outros frameworks, entre eles o **`Chef`**, **`Puppet`** e **`Terraform`**
 
 ### Quando e porque eu utilizaria o CloudFormation
 
@@ -144,7 +144,7 @@ O Azure Resource Manager é o serviço de implantação e gestão do Azure. Forn
 *   Sintaxe declarativa
 
 ### Quando e porque eu utilizaria o Azure Resource Manager 
-Como trata-se de uma soluçáo desenvolvida para rodar em uma plataforma única, assim como o [**CloudFormation**](02-1%20Ferramentas.md) seu uso é restrito. Utilizaria por questões de performance e velocidade de implementação em um provedor específico, desde que estivesse certo de que não haveria necessidade de reaizar uma migração de plataforma.
+Como trata-se de uma soluçáo desenvolvida para rodar em uma plataforma única, assim como o **`CloudFormation`** seu uso é restrito. Utilizaria por questões de performance e velocidade de implementação em um provedor específico, desde que estivesse certo de que não haveria necessidade de reaizar uma migração de plataforma.
 
 Google Cloud Deployment Manager
 -------------------------------
@@ -159,7 +159,7 @@ O Google Cloud Deployment Manager é um serviço de implementação de infra-est
 *   Possui política de cotas para uso de alguns recursos
 
 ### Quando e porque eu utilizaria o Google Cloud Deployment Manager 
-É mais uma soluçáo desenvolvida para um fornecedor de serviços cloud específico, assim como o [**CloudFormation**](02-1-6%20CloudFormation.md) seu uso é restrito. Possui a vantagem de ter configurações no formato YAML o que poderia facilitar a migração dos templates para uma outra ferramente ou plataforma, mesmo assim, sua utilização seria recomendada em cenários onde não se prevê alguma tipo de migração.
+É mais uma soluçáo desenvolvida para um fornecedor de serviços cloud específico, assim como o **`CloudFormation`** seu uso é restrito. Possui a vantagem de ter configurações no formato YAML o que poderia facilitar a migração dos templates para uma outra ferramente ou plataforma, mesmo assim, sua utilização seria recomendada em cenários onde não se prevê alguma tipo de migração.
 
 
 Crossplane
@@ -227,4 +227,4 @@ A partir dessa divisão, os projetos devem seguir caminhos independentes, a comu
 *   Possui seu proprio repositório de módulos (Registry)
 
 ### Quando e porque eu utilizaria o Opentofu
-Como o OpenTofu foi concebido a partir do conceito do `Terraform` suas recomendações são, basicamente, as mesmas. Como trata-se de um projeto recente, suas evoluções poderão sugerir aplicações diferentes de seu "projeto pai", a conferir.
+Como o OpenTofu foi concebido a partir do conceito do **`Terraform`** suas recomendações são, basicamente, as mesmas. Como trata-se de um projeto recente, suas evoluções poderão sugerir aplicações diferentes de seu "projeto pai", a conferir.
