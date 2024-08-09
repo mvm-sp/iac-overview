@@ -5,6 +5,8 @@ Cloudformation
 
 **AWS CloudFormation** é um serviço que permite modelar, provisionar e gerenciar recursos da AWS e de terceiros por meio de arquivos de configuração. Esses arquivos são descritos em formato JSON ou YAML, e você pode usar o CloudFormation para automatizar e orquestrar a criação e a gestão de sua infraestrutura de nuvem.
 
+Sua implementação básica está baseada nos conceitos de **`Stacks`** que podem ser agrupadas em **`StackSets`**
+
 ### Aplicação da Tecnologia
 
 CloudFormation é amplamente utilizado em ambientes de DevOps e SRE (Site Reliability Engineering), onde a automação da infraestrutura é crucial. Ele é aplicável em qualquer ambiente da AWS, desde desenvolvimento até produção, permitindo a consistência e a repetição da infraestrutura através de múltiplos ambientes.
