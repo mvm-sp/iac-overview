@@ -4,8 +4,8 @@ Ferramentas de infraestrutura como código
 
 Aqui listamos algumas ferramentas utilizadas para a criação e gerenciamento de recursos em nuvem.
 
-Chef
-----
+<details>
+<summary>Chef</summary>
 
 O **Chef** é uma ferramenta de gerenciamento de configuração com diversas integrações e algumas soluções para cenários específicos, tem ampla aplicação e dispõe de muitos recursos para implementaçoes de infraestrutura.
 
@@ -24,9 +24,11 @@ O chef torna-se uma ferramenta poderosissima uma vez que ele possúi uma stack c
 Todas as ferramentas da stack do Chef utilizam a linguagem Ruby DSL (Ruby Domain Specific Language) que tem uma curva de aprendizado bastante inclinada e é orientada a desenvolvedores.
 
 A ferramenta [**Chef Inspec**](https://www.inspec.io) é a ferramenta do mercado que criou uma nova área chamada de **Compliance-as-Code** e criou uma iniciativa chamada [**dev-sec**](https://dev-sec.io) que é um framework de hardening criado para integrar **devops** com **security**.
+</details>
 
-Puppet
-------
+<details>
+<summary>Puppet</summary>
+
 
 O **Puppet** é uma ferramenta de gerenciamento de configurações de sistemas Unix-like e Windows através de uma linguagem declarativa baseada em **Ruby.**
 
@@ -49,9 +51,11 @@ O Puppet trabalha com a arquitetura multi-master, onde todos os Servers instalad
 Outra grande vantagem do puppet é que ele funciona em ambientes Unix e Microsoft nativamente através da instalação do Puppet Agent.
 
 Podemos também expandir as funcionalidades através de recursos como o **Puppet DB** para coletar e inventariar as máquinas e o **Puppet Dashboard** ou o **Foreman** como ferramentas de dashboard para visualizar e verificar as configurações aplicadas no ambiente.
+</details>
 
-Ansible
--------
+<details>
+<summary>Ansible</summary>
+
 
 O **Ansible** é uma ferramenta de automação criada para gerenciar múltiplas máquinas de uma única vez através de **playbooks** escritas no formato **YAML.**
 
@@ -77,9 +81,11 @@ Não gosto de utilizar o ansible para garantir a configuração de um parque de 
 Outra maneira que eu gosto de utilizar o ansible é somado a outras ferramentas principalmente com o **Terraform** (ainda vamos falar sobre isto.
 
 Através do **chocolatey** ou outro recurso é possível utilizar o ansible para parametrizar e gerenciar softwares em estações Windows.
+</details>
 
-SaltStack 
----------
+<details>
+<summary>SaltStack</summary>
+
 
 O **SaltStack** é um software de gerenciamento de configuração open source baseado em Python. Ele permite execução remota, ideal para aplicação da abordagem de infraestrutura como código na implantação e gerenciamento de nuvem. 
 
@@ -94,9 +100,11 @@ O **SaltStack** é um software de gerenciamento de configuração open source ba
 ### Quando e porque eu utilizaria o SaltStack
 
 O Salt é um framework de código aberto escrito em Python para configuração de equipamentos, portanto similar ao [**Ansible**](02-1-3%20Ansible.md). Ele é capaz de manter **_Nodes_** remotos em estados definidos. Por exemplo, pode garantir que pacotes específicos sejam instalados e que serviços específicos estejam em execução e também pode consultar e executar comandos em **_Nodes_** individuais ou usando um critério de seleção arbitrário.
+</details>
 
-Terraform
----------
+<details>
+<summary>Terraform</summary>
+
 
 **Terraform** é uma ferramenta para construir, modificar e versionar infraestruturas criada para atuar  principalmente com as clouds como **Azure, Digital Ocean, AWS, GCP, Oracle Cloud, VMWare Cloud.** bem como outras diversas ferramentas _DevOps._
 
@@ -114,9 +122,11 @@ Caracteristicas:
 O Terraform é uma ferramenta perfeita para gerenciar infraestrutura em clouds, existem diversos recursos e módulos para interagir com diversas clouds tornando ela uma ferramenta, como a própria hashicorp diz, **cloud-agnostic**, ou seja, independentemente de cloud se você conhece a o terraform, você consegue gerenciar sua cloud.
 
 O maior poder do terraform é ele se integrar de maneira simples e fácil a ferramentas como Ansible e Puppet, bem como as ferramentas da própria [**Hashicorp**](https://www.hashicorp.com) como o [**Vault**](https://www.hashicorp.com/products/vault/) e o [**Packer**](https://packer.io/)**.** Com esta versatilidade podemos garantir nossa infraestrutura completa em uma cloud.
+</details>
 
-CloudFormation 
---------------
+<details>
+<summary>CloudFormation </summary>
+
 
 O AWS **CloudFormation** é um serviço que fornece aos desenvolvedores e empresas uma forma fácil de criar um conjunto de recursos relacionados da AWS e de terceiros para provisioná-los e gerenciá-los de forma organizada e previsível.
 
@@ -131,10 +141,11 @@ O AWS **CloudFormation** é um serviço que fornece aos desenvolvedores e empres
 ### Quando e porque eu utilizaria o CloudFormation
 
 O AWS **CloudFormation** é um mecanismo de provisionamento conveniente para uma grande variedade de recursos da AWS e de terceiros. Ele atende às necessidades de infraestrutura de muitos tipos diferentes de aplicações, como aplicações corporativas existentes, aplicações herdadas, aplicações criadas usando uma série de recursos da AWS e soluções baseadas em contêineres (incluindo as criadas usando o [**AWS Elastic Beanstalk**](https://aws.amazon.com/pt/elasticbeanstalk/)).
+</details>
 
+<details>
+<summary>Azure Resource Manager </summary>
 
-Azure Resource Manager 
-----------------------
 
 O Azure Resource Manager é o serviço de implantação e gestão do Azure. Fornece uma camada de gestão que lhe permite criar, actualizar, e eliminar recursos na sua conta Azure. Utiliza funcionalidades de gestão, como controle de acesso, bloqueios e etiquetas, para proteger e organizar os seus recursos após a implantação.
 
@@ -145,8 +156,10 @@ O Azure Resource Manager é o serviço de implantação e gestão do Azure. Forn
 
 ### Quando e porque eu utilizaria o Azure Resource Manager 
 Como trata-se de uma soluçáo desenvolvida para rodar em uma plataforma única, assim como o **`CloudFormation`** seu uso é restrito. Utilizaria por questões de performance e velocidade de implementação em um provedor específico, desde que estivesse certo de que não haveria necessidade de reaizar uma migração de plataforma.
+</details>
 
-Google Cloud Deployment Manager
+<details>
+<summary>Google Cloud Deployment Manager</summary>
 -------------------------------
 
 O Google Cloud Deployment Manager é um serviço de implementação de infra-estruturas que automatiza a criação e gestão dos recursos do Google Cloud. Escreve modelos e repositórios de configuração flexíveis e utiliza-os para criar implementações que têm uma variedade de serviços Google Cloud, tais como Cloud Storage, Compute Engine, e Cloud SQL, configurados para trabalharem em conjunto. Uma configuração descreve todos os recursos que se pretende para uma única implementação
@@ -160,10 +173,11 @@ O Google Cloud Deployment Manager é um serviço de implementação de infra-est
 
 ### Quando e porque eu utilizaria o Google Cloud Deployment Manager 
 É mais uma soluçáo desenvolvida para um fornecedor de serviços cloud específico, assim como o **`CloudFormation`** seu uso é restrito. Possui a vantagem de ter configurações no formato YAML o que poderia facilitar a migração dos templates para uma outra ferramente ou plataforma, mesmo assim, sua utilização seria recomendada em cenários onde não se prevê alguma tipo de migração.
+</details>
 
+<details>
+<summary>Crossplane</summary>
 
-Crossplane
--------------------------------
 
 Crossplane é um projecto de código aberto, CNCF construído sobre a fundação da Kubernetes para orquestrar qualquer coisa. Encapsular políticas, permissões e outros _guardrails_ utilizando uma API personalizada para permitir aos seus clientes o auto-serviço sem necessidade de se tornarem especialistas em infra-estruturas.
 
@@ -176,10 +190,11 @@ Crossplane é um projecto de código aberto, CNCF construído sobre a fundação
 
 ### Quando e porque eu utilizaria o Crossplane
 Com o Crossplane não há necessidade de escrever código: podemos construir um plano de controlo sem escrever código de sistemas distribuídos complicados. É declarativo, e pode definir, compor, e oferecer as suas próprias abstracções de API de infra-estrutura em cima de primitivos serviços de nuvem. Isto torna-a altamente configurável.
+</details>
 
+<details>
+<summary>Vagrant</summary>
 
-Vagrant
--------------------------------
 
 Vagrant é uma ferramenta para a construção de ambientes de desenvolvimento completos. Com um fluxo de trabalho fácil de usar e foco na automatização, Vagrant reduz o tempo de configuração do ambiente de desenvolvimento, aumenta a paridade desenvolvimento/produção, e faz do "funciona na minha máquina" uma relíquia do passado.
 
@@ -192,10 +207,11 @@ Vagrant é uma ferramenta para a construção de ambientes de desenvolvimento co
 
 ### Quando e porque eu utilizaria o Vagrant
 O Vagrant proporciona ambientes de trabalho fáceis de configurar, reproduzíveis e portáteis, construídos sobre tecnologia padrão da indústria e controlados por um único fluxo de trabalho consistente para ajudar a maximizar a produtividade e flexibilidade de si e da sua equipa. Se for um programador, a Vagrant isolará as dependências e a sua configuração num único ambiente descartável e consistente, sem sacrificar nenhuma das ferramentas com que está habituado a trabalhar (editores, navegadores, depuradores, etc.).
+</details>
 
+<details>
+<summary>Pulumi</summary>
 
-Pulumi
--------------------------------
 
 Pulumi é uma infra-estrutura open source, e funciona melhor com o Serviço Pulumi para tornar a gestão da infra-estrutura segura, confiável, e sem complicações.Pulumi ajuda os programadores e as equipes de infra-estruturas a colaborar e a gerenciar a complexidade da nuvem.
 O Pulumi usa Pacotes para fornecer os blocos de construção para implantar facilmente infra-estruturas com TypeScript/JavaScript, Python, Go, e C#. Fornece recursos de cloud superiores e fornecedores de SaaS para construir infra-estruturas  que satisfaçam as suas necessidades. Para arquiteturas populares como Kubernetes ou serverless.
@@ -210,9 +226,11 @@ O Pulumi usa Pacotes para fornecer os blocos de construção para implantar faci
 
 ### Quando e porque eu utilizaria o Pulumi
 Em empresas que não possuem uma grande variedade de especialistas o Pulumi pode ser a solução ideal. Partindo do ponto em que os próprios desenvolvedores podem codificar a infra-estrutura para suas aplicações na mesma linguagem em que estão desenvolvendo temos um ganho de produtividade e uma curva de aprendizado baixa.
+</details>
 
-OpenTofu
--------------------------------
+<details>
+<summary>OpenTofu</summary>
+
 
 OpenTofu é uma iniciatitiva da [Linux Foundation](https://www.linuxfoundation.org/) a partir de um fork do repositório do terraform da versão 1.16, ou seja, o OpenTofu nasce já na mesma versão e totalmente compatível com o Terraform.
 Mas qual o motivo para o nascimento desta iniciativa? Você pode ter todos os detalhes no [manifesto](https://opentofu.org/manifesto/) do projeto, mas basicamente, há uma desconfiança da comunidade [open source](https://www.redhat.com/en/topics/open-source/what-is-open-source-software) a partir da alteração da licença de distribuição do terraform por parte da empresa mantenedora, a [Hashcorp](https://www.hashicorp.com/), que a partir de Agosto de 2023 passou a distribuir todas as suas soluções sob um contrato baseado na [BSL](https://en.wikipedia.org/wiki/Business_Source_License) *Business Source License* em substituição a [MPL](https://www.mozilla.org/en-US/MPL/) *Mozilla Source License*. 
@@ -228,3 +246,4 @@ A partir dessa divisão, os projetos devem seguir caminhos independentes, a comu
 
 ### Quando e porque eu utilizaria o Opentofu
 Como o OpenTofu foi concebido a partir do conceito do **`Terraform`** suas recomendações são, basicamente, as mesmas. Como trata-se de um projeto recente, suas evoluções poderão sugerir aplicações diferentes de seu "projeto pai", a conferir.
+</details>
