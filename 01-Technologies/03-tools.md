@@ -4,7 +4,7 @@ Ferramentas de infraestrutura como código
 
 Aqui listamos algumas ferramentas utilizadas para a criação e gerenciamento de recursos em nuvem.
 
-<details>
+<details open>
 <summary>Chef</summary>
 
 O **Chef** é uma ferramenta de gerenciamento de configuração com diversas integrações e algumas soluções para cenários específicos, tem ampla aplicação e dispõe de muitos recursos para implementaçoes de infraestrutura.
@@ -26,7 +26,7 @@ Todas as ferramentas da stack do Chef utilizam a linguagem Ruby DSL (Ruby Domain
 A ferramenta [**Chef Inspec**](https://www.inspec.io) é a ferramenta do mercado que criou uma nova área chamada de **Compliance-as-Code** e criou uma iniciativa chamada [**dev-sec**](https://dev-sec.io) que é um framework de hardening criado para integrar **devops** com **security**.
 </details>
 
-<details>
+<details open>
 <summary>Puppet</summary>
 
 
@@ -53,7 +53,7 @@ Outra grande vantagem do puppet é que ele funciona em ambientes Unix e Microsof
 Podemos também expandir as funcionalidades através de recursos como o **Puppet DB** para coletar e inventariar as máquinas e o **Puppet Dashboard** ou o **Foreman** como ferramentas de dashboard para visualizar e verificar as configurações aplicadas no ambiente.
 </details>
 
-<details>
+<details open>
 <summary>Ansible</summary>
 
 
@@ -83,7 +83,7 @@ Outra maneira que eu gosto de utilizar o ansible é somado a outras ferramentas 
 Através do **chocolatey** ou outro recurso é possível utilizar o ansible para parametrizar e gerenciar softwares em estações Windows.
 </details>
 
-<details>
+<details open>
 <summary>SaltStack</summary>
 
 
@@ -102,7 +102,7 @@ O **SaltStack** é um software de gerenciamento de configuração open source ba
 O Salt é um framework de código aberto escrito em Python para configuração de equipamentos, portanto similar ao [**Ansible**](02-1-3%20Ansible.md). Ele é capaz de manter **_Nodes_** remotos em estados definidos. Por exemplo, pode garantir que pacotes específicos sejam instalados e que serviços específicos estejam em execução e também pode consultar e executar comandos em **_Nodes_** individuais ou usando um critério de seleção arbitrário.
 </details>
 
-<details>
+<details open>
 <summary>Terraform</summary>
 
 
@@ -124,7 +124,7 @@ O Terraform é uma ferramenta perfeita para gerenciar infraestrutura em clouds, 
 O maior poder do terraform é ele se integrar de maneira simples e fácil a ferramentas como Ansible e Puppet, bem como as ferramentas da própria [**Hashicorp**](https://www.hashicorp.com) como o [**Vault**](https://www.hashicorp.com/products/vault/) e o [**Packer**](https://packer.io/)**.** Com esta versatilidade podemos garantir nossa infraestrutura completa em uma cloud.
 </details>
 
-<details>
+<details open>
 <summary>CloudFormation </summary>
 
 
@@ -143,7 +143,7 @@ O AWS **CloudFormation** é um serviço que fornece aos desenvolvedores e empres
 O AWS **CloudFormation** é um mecanismo de provisionamento conveniente para uma grande variedade de recursos da AWS e de terceiros. Ele atende às necessidades de infraestrutura de muitos tipos diferentes de aplicações, como aplicações corporativas existentes, aplicações herdadas, aplicações criadas usando uma série de recursos da AWS e soluções baseadas em contêineres (incluindo as criadas usando o [**AWS Elastic Beanstalk**](https://aws.amazon.com/pt/elasticbeanstalk/)).
 </details>
 
-<details>
+<details open>
 <summary>Azure Resource Manager </summary>
 
 
@@ -158,7 +158,7 @@ O Azure Resource Manager é o serviço de implantação e gestão do Azure. Forn
 Como trata-se de uma soluçáo desenvolvida para rodar em uma plataforma única, assim como o **`CloudFormation`** seu uso é restrito. Utilizaria por questões de performance e velocidade de implementação em um provedor específico, desde que estivesse certo de que não haveria necessidade de reaizar uma migração de plataforma.
 </details>
 
-<details>
+<details open>
 <summary>Google Cloud Deployment Manager</summary>
 -------------------------------
 
@@ -175,7 +175,7 @@ O Google Cloud Deployment Manager é um serviço de implementação de infra-est
 É mais uma soluçáo desenvolvida para um fornecedor de serviços cloud específico, assim como o **`CloudFormation`** seu uso é restrito. Possui a vantagem de ter configurações no formato YAML o que poderia facilitar a migração dos templates para uma outra ferramente ou plataforma, mesmo assim, sua utilização seria recomendada em cenários onde não se prevê alguma tipo de migração.
 </details>
 
-<details>
+<details open>
 <summary>Crossplane</summary>
 
 
@@ -192,7 +192,7 @@ Crossplane é um projecto de código aberto, CNCF construído sobre a fundação
 Com o Crossplane não há necessidade de escrever código: podemos construir um plano de controlo sem escrever código de sistemas distribuídos complicados. É declarativo, e pode definir, compor, e oferecer as suas próprias abstracções de API de infra-estrutura em cima de primitivos serviços de nuvem. Isto torna-a altamente configurável.
 </details>
 
-<details>
+<details open>
 <summary>Vagrant</summary>
 
 
@@ -209,7 +209,7 @@ Vagrant é uma ferramenta para a construção de ambientes de desenvolvimento co
 O Vagrant proporciona ambientes de trabalho fáceis de configurar, reproduzíveis e portáteis, construídos sobre tecnologia padrão da indústria e controlados por um único fluxo de trabalho consistente para ajudar a maximizar a produtividade e flexibilidade de si e da sua equipa. Se for um programador, a Vagrant isolará as dependências e a sua configuração num único ambiente descartável e consistente, sem sacrificar nenhuma das ferramentas com que está habituado a trabalhar (editores, navegadores, depuradores, etc.).
 </details>
 
-<details>
+<details open>
 <summary>Pulumi</summary>
 
 
@@ -228,7 +228,7 @@ O Pulumi usa Pacotes para fornecer os blocos de construção para implantar faci
 Em empresas que não possuem uma grande variedade de especialistas o Pulumi pode ser a solução ideal. Partindo do ponto em que os próprios desenvolvedores podem codificar a infra-estrutura para suas aplicações na mesma linguagem em que estão desenvolvendo temos um ganho de produtividade e uma curva de aprendizado baixa.
 </details>
 
-<details>
+<details open>
 <summary>OpenTofu</summary>
 
 
