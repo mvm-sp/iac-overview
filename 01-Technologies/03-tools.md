@@ -5,7 +5,7 @@ Ferramentas de infraestrutura como código
 Aqui listamos algumas ferramentas utilizadas para a criação e gerenciamento de recursos em nuvem.
 
 <details open>
-<summary>Chef</summary>
+<summary><b>Chef</b></summary>
 
 O **Chef** é uma ferramenta de gerenciamento de configuração com diversas integrações e algumas soluções para cenários específicos, tem ampla aplicação e dispõe de muitos recursos para implementaçoes de infraestrutura.
 
@@ -27,7 +27,7 @@ A ferramenta [**Chef Inspec**](https://www.inspec.io) é a ferramenta do mercado
 </details>
 
 <details open>
-<summary>Puppet</summary>
+<summary><b>Puppet</b></summary>
 
 
 O **Puppet** é uma ferramenta de gerenciamento de configurações de sistemas Unix-like e Windows através de uma linguagem declarativa baseada em **Ruby.**
@@ -54,7 +54,7 @@ Podemos também expandir as funcionalidades através de recursos como o **Puppet
 </details>
 
 <details open>
-<summary>Ansible</summary>
+<summary><b>Ansible</b></summary>
 
 
 O **Ansible** é uma ferramenta de automação criada para gerenciar múltiplas máquinas de uma única vez através de **playbooks** escritas no formato **YAML.**
@@ -84,7 +84,7 @@ Através do **chocolatey** ou outro recurso é possível utilizar o ansible para
 </details>
 
 <details open>
-<summary>SaltStack</summary>
+<summary><b>SaltStack</b></summary>
 
 
 O **SaltStack** é um software de gerenciamento de configuração open source baseado em Python. Ele permite execução remota, ideal para aplicação da abordagem de infraestrutura como código na implantação e gerenciamento de nuvem. 
@@ -103,7 +103,7 @@ O Salt é um framework de código aberto escrito em Python para configuração d
 </details>
 
 <details open>
-<summary>Terraform</summary>
+<summary><b>Terraform</b></summary>
 
 
 **Terraform** é uma ferramenta para construir, modificar e versionar infraestruturas criada para atuar  principalmente com as clouds como **Azure, Digital Ocean, AWS, GCP, Oracle Cloud, VMWare Cloud.** bem como outras diversas ferramentas _DevOps._
@@ -125,7 +125,7 @@ O maior poder do terraform é ele se integrar de maneira simples e fácil a ferr
 </details>
 
 <details open>
-<summary>CloudFormation </summary>
+<summary><b>CloudFormation </b></summary>
 
 
 O AWS **CloudFormation** é um serviço que fornece aos desenvolvedores e empresas uma forma fácil de criar um conjunto de recursos relacionados da AWS e de terceiros para provisioná-los e gerenciá-los de forma organizada e previsível.
@@ -144,7 +144,7 @@ O AWS **CloudFormation** é um mecanismo de provisionamento conveniente para uma
 </details>
 
 <details open>
-<summary>Azure Resource Manager </summary>
+<summary><b>Azure Resource Manager </b></summary>
 
 
 O Azure Resource Manager é o serviço de implantação e gestão do Azure. Fornece uma camada de gestão que lhe permite criar, actualizar, e eliminar recursos na sua conta Azure. Utiliza funcionalidades de gestão, como controle de acesso, bloqueios e etiquetas, para proteger e organizar os seus recursos após a implantação.
@@ -159,7 +159,7 @@ Como trata-se de uma soluçáo desenvolvida para rodar em uma plataforma única,
 </details>
 
 <details open>
-<summary>Google Cloud Deployment Manager</summary>
+<summary><b>Google Cloud Deployment Manager</b></summary>
 -------------------------------
 
 O Google Cloud Deployment Manager é um serviço de implementação de infra-estruturas que automatiza a criação e gestão dos recursos do Google Cloud. Escreve modelos e repositórios de configuração flexíveis e utiliza-os para criar implementações que têm uma variedade de serviços Google Cloud, tais como Cloud Storage, Compute Engine, e Cloud SQL, configurados para trabalharem em conjunto. Uma configuração descreve todos os recursos que se pretende para uma única implementação
@@ -176,7 +176,7 @@ O Google Cloud Deployment Manager é um serviço de implementação de infra-est
 </details>
 
 <details open>
-<summary>Crossplane</summary>
+<summary><b>Crossplane</b></summary>
 
 
 Crossplane é um projecto de código aberto, CNCF construído sobre a fundação da Kubernetes para orquestrar qualquer coisa. Encapsular políticas, permissões e outros _guardrails_ utilizando uma API personalizada para permitir aos seus clientes o auto-serviço sem necessidade de se tornarem especialistas em infra-estruturas.
@@ -193,7 +193,7 @@ Com o Crossplane não há necessidade de escrever código: podemos construir um 
 </details>
 
 <details open>
-<summary>Vagrant</summary>
+<summary><b>Vagrant</b></summary>
 
 
 Vagrant é uma ferramenta para a construção de ambientes de desenvolvimento completos. Com um fluxo de trabalho fácil de usar e foco na automatização, Vagrant reduz o tempo de configuração do ambiente de desenvolvimento, aumenta a paridade desenvolvimento/produção, e faz do "funciona na minha máquina" uma relíquia do passado.
@@ -210,7 +210,7 @@ O Vagrant proporciona ambientes de trabalho fáceis de configurar, reproduzívei
 </details>
 
 <details open>
-<summary>Pulumi</summary>
+<summary><b>Pulumi</b></summary>
 
 
 Pulumi é uma infra-estrutura open source, e funciona melhor com o Serviço Pulumi para tornar a gestão da infra-estrutura segura, confiável, e sem complicações.Pulumi ajuda os programadores e as equipes de infra-estruturas a colaborar e a gerenciar a complexidade da nuvem.
@@ -229,7 +229,7 @@ Em empresas que não possuem uma grande variedade de especialistas o Pulumi pode
 </details>
 
 <details open>
-<summary>OpenTofu</summary>
+<summary><b>OpenTofu</b></summary>
 
 
 OpenTofu é uma iniciatitiva da [Linux Foundation](https://www.linuxfoundation.org/) a partir de um fork do repositório do terraform da versão 1.16, ou seja, o OpenTofu nasce já na mesma versão e totalmente compatível com o Terraform.
