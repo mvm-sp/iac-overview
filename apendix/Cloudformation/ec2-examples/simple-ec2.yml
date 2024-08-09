@@ -1,0 +1,8 @@
+---
+Resources:
+  posmack-example-EC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: <your AWS zone>
+      ImageId: <image Id>
+      InstanceType: <instance type>

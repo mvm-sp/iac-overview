@@ -1,0 +1,53 @@
+---
+Parameters:
+  SecurityGroupDescription:
+    Description: Security Group Description
+    Type: String
+
+Resources:
+  posmack-example-EC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: <your AWS zone>
+      ImageId: <image Id>
+      InstanceType: <instance type>
+      SecurityGroups:
+        - !Ref SSHSecurityGroup
+        - !Ref ServerSecurityGroup
+
+  # an elastic IP for our instance
+  posmack-EIP:
+    Type: AWS::EC2::EIP
+    Properties:
+      InstanceId: !Ref posmack-example-EC2
+
+  # our EC2 security group
+  SSHSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable SSH access via port 22
+      SecurityGroupIngress:
+      - CidrIp: 0.0.0.0/0
+        FromPort: 22
+        IpProtocol: tcp
+        ToPort: 22
+
+  # our second EC2 security group
+  ServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: !Ref SecurityGroupDescription
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: 80
+        ToPort: 80
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        CidrIp: 192.168.1.1/32
+
+Outputs:
+  ElasticIP:
+    Description: Elastic IP Value
+    Value: !Ref posmack-EIP
