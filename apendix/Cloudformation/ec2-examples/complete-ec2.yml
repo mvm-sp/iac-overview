@@ -13,7 +13,6 @@ Resources:
       InstanceType: <instance type>
       SecurityGroups:
         - !Ref SSHSecurityGroup
-        - !Ref ServerSecurityGroup
 
   # an elastic IP for our instance
   posmack-EIP:
@@ -21,7 +20,7 @@ Resources:
     Properties:
       InstanceId: !Ref posmack-example-EC2
 
-  # our EC2 security group
+  # our EC2 SSH security group
   SSHSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -31,21 +30,6 @@ Resources:
         FromPort: 22
         IpProtocol: tcp
         ToPort: 22
-
-  # our second EC2 security group
-  ServerSecurityGroup:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      GroupDescription: !Ref SecurityGroupDescription
-      SecurityGroupIngress:
-      - IpProtocol: tcp
-        FromPort: 80
-        ToPort: 80
-        CidrIp: 0.0.0.0/0
-      - IpProtocol: tcp
-        FromPort: 22
-        ToPort: 22
-        CidrIp: 192.168.1.1/32
 
 Outputs:
   ElasticIP:
