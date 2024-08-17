@@ -5,7 +5,7 @@ resources:
     project: <PROJECT_NAME>
     name: <BUCKET_NAME> 
 - type: compute.v1.instance
-  name: instance-pos-mack-vm
+  name: <INSTANCE_NAME>
   properties:
     zone: us-central1-a
     machineType: zones/us-central1-a/machineTypes/n1-standard-1
