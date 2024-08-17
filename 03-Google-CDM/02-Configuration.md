@@ -48,14 +48,14 @@ resources:
 ```      
 Cada uma das seções define uma parte diferente da implantação:
 
-* A seção `imports` é uma lista de [arquivos de modelo] (/deployment-manager/docs/configuration/templates/create-basic-template) que serão usados pela configuração. O Deployment Manager expande recursivamente todos os modelos importados para formar sua configuração final.
+* A seção `imports` é uma lista de [modelos](https://cloud.google.com/deployment-manager/docs/configuration/templates/create-basic-template) que serão usados pela configuração. O Deployment Manager expande recursivamente todos os modelos importados para formar sua configuração final.
     
 * A seção `resources` é uma lista de recursos que compõem essa implementação. Um recurso pode ser:
     
     * Um tipo de base gerenciado pelo Google, como uma instância de VM do Compute Engine.
     * Um modelo importado
-    * Um [tipo composto] (/deployment-manager/docs/fundamentals#composite_types).
-    * Um [type provider] (/deployment-manager/docs/fundamentals#basetypes).
+    * Um [composite](https://cloud.google.com/deployment-manager/docs/fundamentals#composite_types).
+    * Um [type provider](https://cloud.google.com/deployment-manager/docs/fundamentals#basetypes).
 
 Você também pode incluir outras seções opcionais, como as seções `outputs` e `metadata`. A seção `outputs` permite que você [exponha dados dos seus modelos e configurações como saídas](https://cloud.google.com/deployment-manager/docs/configuration/expose-information-outputs) para que outros modelos na mesma implantação consumam ou como saídas para seus usuários finais, enquanto a seção `metadata` permite que você use outros recursos, como [definir dependências explícitas](https://cloud.google.com/deployment-manager/docs/configuration/create-explicit-dependencies) entre recursos.
 
@@ -198,14 +198,14 @@ Na configuração do Deployment Manager, você adiciona esses discos usando a se
     type: PERSISTENT
  ```    
 
-Você também pode fornecer qualquer propriedade gravável desse recurso. Para determinar se uma propriedade pode ser gravada, use a documentação de referência da API para o tipo de recurso. Por exemplo, a [referência do Compute Engine] (/compute/docs/reference/latest) marca determinadas propriedades que são somente de saída, portanto, você não pode definir essas propriedades em sua configuração, pois elas são imutáveis.
+Você também pode fornecer qualquer propriedade gravável desse recurso. Para determinar se uma propriedade pode ser gravada, use a documentação de referência da API para o tipo de recurso. Por exemplo, a [referência do Compute Engine](https://cloud.google.com/compute/docs/reference/latest) marca determinadas propriedades que são somente de saída, portanto, você não pode definir essas propriedades em sua configuração, pois elas são imutáveis.
 
 
-Algumas APIs exigem um conjunto mínimo de propriedades para criar um recurso. Um [disco persistente do Compute Engine] (/compute/docs/reference/latest/disks/insert), por exemplo, requer o nome do disco, a origem da imagem, o tamanho do disco e assim por diante, ao criar um novo disco. Para obter informações sobre um recurso específico, consulte a referência da API para esse recurso.
+Algumas APIs exigem um conjunto mínimo de propriedades para criar um recurso. Um [disco persistente do Compute Engine](https://cloud.google.com/compute/docs/reference/latest/disks/insert), por exemplo, requer o nome do disco, a origem da imagem, o tamanho do disco e assim por diante, ao criar um novo disco. Para obter informações sobre um recurso específico, consulte a referência da API para esse recurso.
 
 ### Definição das propriedades do modelo
 
-Se você importar um modelo para usar na sua configuração, use a seção `properties` para definir valores para [template properties] (/deployment-manager/docs/configuration/templates/define-template-properties) em vez de propriedades de recursos. Como alternativa, se o modelo não tiver propriedades de modelo, você poderá omitir completamente a seção `properties`.
+Se você importar um modelo para usar na sua configuração, use a seção `properties` para definir valores para [template properties](https://cloud.google.com/deployment-manager/docs/configuration/templates/define-template-properties) em vez de propriedades de recursos. Como alternativa, se o modelo não tiver propriedades de modelo, você poderá omitir completamente a seção `properties`.
 
 Criação de recursos de diferentes serviços do Google Cloud
 -------------------------------------------------------
@@ -254,4 +254,4 @@ resources:
 Tipos e propriedades de recursos compatíveis
 ---------------------------------------
 
-Consulte a lista completa de recursos gerenciados pelo Google compatíveis na documentação [Supported Resource Types] (/deployment-manager/docs/configuration/supported-resource-types).
+Consulte a lista completa de recursos gerenciados pelo Google compatíveis na documentação [Supported Resource Types](https://cloud.google.com/deployment-manager/docs/configuration/supported-resource-types).
