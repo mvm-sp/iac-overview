@@ -4,6 +4,10 @@ Cloud Deployment Manager
 
 **Google Cloud Deployment Manager** é uma ferramenta de infraestrutura como código (IaC) usada para criar e gerenciar recursos no Google Cloud Platform (GCP). Com o Deployment Manager, você pode definir a infraestrutura do seu ambiente GCP em arquivos de configuração YAML, JSON ou Python, que especificam os recursos a serem criados e gerenciados, como máquinas virtuais, bancos de dados, redes, entre outros.
 
+O Deployment Manager irá executar suas configurações dentro da estrutura provida pela Google Cloud Platform.
+
+![image](images/03-01-01.png)
+
 ### Estrutura do Deployment Manager
 
 1. **Arquivos de Configuração**:
@@ -36,8 +40,12 @@ O GCP organiza recursos em uma hierarquia que reflete a estrutura organizacional
 1. **Definir Configuração**:
    - Você começa definindo um arquivo de configuração que especifica os recursos que deseja provisionar. Esses arquivos podem referenciar templates e usar variáveis para facilitar a reutilização.
 
+   ![image](images/03-01-02.png)
+
 2. **Deploy**:
    - Com a configuração pronta, você executa o comando `gcloud deployment-manager deployments create [DEPLOYMENT_NAME] --config [CONFIG_FILE]` para iniciar o provisionamento dos recursos. O Deployment Manager irá interagir com as APIs do GCP para criar os recursos conforme especificado.
+  
+   ![image](images/03-01-03.png)
 
 3. **Gerenciamento e Atualizações**:
    - Após o provisionamento, você pode gerenciar e atualizar os recursos modificando o arquivo de configuração e aplicando as mudanças com `gcloud deployment-manager deployments update [DEPLOYMENT_NAME]`. O Deployment Manager calcula as diferenças e aplica apenas as mudanças necessárias, mantendo a consistência do ambiente.
