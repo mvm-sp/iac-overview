@@ -1,0 +1,128 @@
+{
+    "canIpForward": false,
+    "cpuPlatform": "Intel Broadwell",
+    "creationTimestamp": "2024-08-15T15:48:48.534-07:00",
+    "deletionProtection": false,
+    "disks": [
+      {
+        "architecture": "X86_64",
+        "guestOsFeatures": [
+          {
+            "type": "UEFI_COMPATIBLE"
+          },
+          {
+            "type": "VIRTIO_SCSI_MULTIQUEUE"
+          },
+          {
+            "type": "GVNIC"
+          },
+          {
+            "type": "SEV_CAPABLE"
+          },
+          {
+            "type": "SEV_LIVE_MIGRATABLE_V2"
+          }
+        ],
+        "type": "PERSISTENT",
+        "licenses": [
+          "projects/debian-cloud/global/licenses/debian-12-bookworm"
+        ],
+        "deviceName": "instance-template-pos-mack",
+        "autoDelete": true,
+        "source": "projects/pos-mack/zones/us-central1-a/disks/instance-template-pos-mack-20240815-222730",
+        "index": 0,
+        "boot": true,
+        "kind": "compute#attachedDisk",
+        "mode": "READ_WRITE",
+        "interface": "SCSI",
+        "diskSizeGb": "10"
+      }
+    ],
+    "fingerprint": "tblCYyNyTyg=",
+    "id": "8694184188780428095",
+    "kind": "compute#instance",
+    "labelFingerprint": "54ffHQLiMnU=",
+    "labels": {
+      "goog-ec-src": "vm_add-gcloud"
+    },
+    "lastStartTimestamp": "2024-08-15T15:48:53.912-07:00",
+    "machineType": "projects/pos-mack/zones/us-central1-a/machineTypes/e2-medium",
+    "metadata": {
+      "fingerprint": "ycFlSpacCcQ=",
+      "kind": "compute#metadata"
+    },
+    "name": "instance-template-pos-mack-20240815-222730",
+    "networkInterfaces": [
+      {
+        "stackType": "IPV4_ONLY",
+        "name": "nic0",
+        "network": "projects/pos-mack/global/networks/default",
+        "accessConfigs": [
+          {
+            "name": "external-nat",
+            "type": "ONE_TO_ONE_NAT",
+            "natIP": "173.255.114.56",
+            "kind": "compute#accessConfig",
+            "networkTier": "PREMIUM"
+          }
+        ],
+        "subnetwork": "projects/pos-mack/regions/us-central1/subnetworks/default",
+        "networkIP": "10.128.0.2",
+        "fingerprint": "lhKbKbFPRPY=",
+        "kind": "compute#networkInterface"
+      }
+    ],
+    "reservationAffinity": {
+      "consumeReservationType": "ANY_RESERVATION"
+    },
+    "resourceStatus": {
+      "scheduling": {}
+    },
+    "satisfiesPzi": true,
+    "scheduling": {
+      "onHostMaintenance": "MIGRATE",
+      "provisioningModel": "STANDARD",
+      "automaticRestart": true,
+      "preemptible": false
+    },
+    "selfLink": "projects/pos-mack/zones/us-central1-a/instances/instance-template-pos-mack-20240815-222730",
+    "serviceAccounts": [
+      {
+        "email": "881876191833-compute@developer.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/devstorage.read_only",
+          "https://www.googleapis.com/auth/logging.write",
+          "https://www.googleapis.com/auth/monitoring.write",
+          "https://www.googleapis.com/auth/service.management.readonly",
+          "https://www.googleapis.com/auth/servicecontrol",
+          "https://www.googleapis.com/auth/trace.append"
+        ]
+      }
+    ],
+    "shieldedInstanceConfig": {
+      "enableSecureBoot": false,
+      "enableVtpm": true,
+      "enableIntegrityMonitoring": true
+    },
+    "shieldedInstanceIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "shieldedVmConfig": {
+      "enableSecureBoot": false,
+      "enableVtpm": true,
+      "enableIntegrityMonitoring": true
+    },
+    "shieldedVmIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "startRestricted": false,
+    "status": "RUNNING",
+    "tags": {
+      "items": [
+        "http-server",
+        "https-server"
+      ],
+      "fingerprint": "6smc4R4d39I="
+    },
+    "zone": "projects/pos-mack/zones/us-central1-a"
+  }

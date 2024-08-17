@@ -1,0 +1,20 @@
+resources:
+- type: storage.v1.bucket
+  name: <RESOURCE_NAME>
+  properties:
+    project: <PROJECT_NAME>
+    name: <BUCKET_NAME> 
+- type: compute.v1.instance
+  name: instance-pos-mack-vm
+  properties:
+    zone: us-central1-a
+    machineType: zones/us-central1-a/machineTypes/n1-standard-1
+    disks:
+    - deviceName: boot
+      type: PERSISTENT
+      boot: true
+      autoDelete: true
+      initializeParams:
+        sourceImage: projects/debian-cloud/global/images/family/debian-11
+    networkInterfaces:
+    - network: global/networks/default
