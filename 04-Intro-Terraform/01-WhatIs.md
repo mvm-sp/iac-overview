@@ -1,6 +1,6 @@
 Introdução ao Terraform
 =====================
-
+![Terraform](images/01-01-02.png)
 
 ### O que é o Terraform?
 
@@ -8,7 +8,7 @@ Terraform é uma ferramenta de **infraestrutura como código (IaC)** desenvolvid
 
 O Terraform é independente de fornecedor (cloud-agnostic), o que significa que ele pode ser usado para gerenciar infraestruturas em várias plataformas de nuvem (como AWS, Azure, Google Cloud) e também em ambientes locais (on-premises).
 
-### Problema que o Terraform se propõe a resolver
+### Quando usar Terraform?
 
 O principal problema que o Terraform resolve é a **gestão manual e complexa da infraestrutura de TI**. Tradicionalmente, configurar e gerenciar infraestrutura de TI envolvia muitos passos manuais e repetitivos, o que aumenta o risco de erros e inconsistências. Com a adoção crescente de arquiteturas de microservices, ambientes multi-nuvem, e a necessidade de escalabilidade rápida, a complexidade da gestão da infraestrutura aumentou ainda mais.
 
@@ -18,11 +18,15 @@ O Terraform resolve esses problemas ao fornecer:
 - **Documentação**: O código usado para definir a infraestrutura também serve como documentação viva do que foi implementado.
 - **Colaboração**: Múltiplos times podem colaborar em mudanças de infraestrutura de forma segura, revisando e aplicando alterações através de um fluxo de trabalho de código.
 
-### Quem é o fornecedor atual da tecnologia?
+### Fornecedor da tecnologia
 
 O Terraform é desenvolvido e mantido pela **HashiCorp**, uma empresa americana fundada em 2012, conhecida por desenvolver ferramentas de DevOps e automação de infraestrutura. A HashiCorp é também a responsável por outros produtos populares como Vault, Consul, e Nomad.
 
+![HashCorp](images/01-01-01.jpeg)
+
 A HashiCorp, desenvolvedora do Terraform, foi adquirida pela **IBM**. A aquisição reflete a estratégia da IBM em expandir suas capacidades em automação e infraestrutura em nuvem, integrando as soluções da HashiCorp em seu portfólio. Assim, o Terraform agora faz parte do ecossistema de ferramentas de nuvem e automação oferecido pela IBM, embora continue sendo mantido como um projeto de código aberto.
+
+![HashCorp](images/01-01-03.png)
 
 A IBM anunciou a aquisição da HashiCorp em 24 de abril de 2024, em uma transação avaliada em aproximadamente 6,4 bilhões de dólares. A IBM pagará 35 dólares por ação em dinheiro, e a aquisição deve ser concluída até o final de 2024. Esta compra é estratégica para a IBM, que visa fortalecer ainda mais suas ofertas em nuvem híbrida e inteligência artificial, integrando as soluções da HashiCorp para automação e gerenciamento de infraestrutura em ambientes de múltiplas nuvens e híbridos.
 
