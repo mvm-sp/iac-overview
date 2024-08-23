@@ -35,34 +35,33 @@ A IBM anunciou a aquisição da HashiCorp em 24 de abril de 2024, em uma transa�
 
 O Terraform é um software de código aberto e passou por várias versões desde o seu lançamento. Aqui estão algumas das versões principais com suas respectivas datas de lançamento:
 
-Aqui está a lista de versões principais do Terraform atualizada até a 1.19.5:
+Aqui está a lista das versões do Terraform e suas respectivas datas de lançamento:
 
-- **Terraform 0.1.0** (28 de julho de 2014): Primeira versão pública do Terraform.
-- **Terraform 0.8.0** (30 de novembro de 2016): Incluiu suporte a módulos reutilizáveis e melhorias significativas no plano de execução.
-- **Terraform 0.9.0** (20 de março de 2017): Introduziu suporte para "remote backends" e "remote state".
-- **Terraform 0.11.0** (16 de novembro de 2017): Introduziu novas funcionalidades e suporte expandido para múltiplos provedores de nuvem.
-- **Terraform 0.12.0** (22 de maio de 2019): Introduziu melhorias na linguagem HCL e suporte para expressões condicionais.
-- **Terraform 0.13.0** (10 de agosto de 2020): Introduziu suporte a módulos pré-configurados.
-- **Terraform 0.14.0** (3 de dezembro de 2020): Melhorias na interface de usuário e no controle de mudanças.
-- **Terraform 0.15.0** (7 de abril de 2021): Introduziu novas funcionalidades de "logging" e refinamentos no controle de erros.
-- **Terraform 1.0.0** (8 de junho de 2021): Primeira versão estável, consolidando a maturidade da ferramenta para uso em produção.
-- **Terraform 1.1.0** (8 de dezembro de 2021): Melhorias focadas em fluxos de trabalho, como a introdução de `moved` blocks.
-- **Terraform 1.2.0** (17 de maio de 2022): Melhorias para provedores e módulos, incluindo desempenho.
-- **Terraform 1.3.0** (28 de setembro de 2022): Melhorias na experiência de escrita e leitura de código HCL.
-- **Terraform 1.4.0** (22 de fevereiro de 2023): Aprimoramentos de segurança e maior suporte para ambientes empresariais.
-- **Terraform 1.5.0** (16 de junho de 2023): Melhorias na modularidade e colaboração entre equipes.
-- **Terraform 1.6.0** (12 de setembro de 2023): Introduziu novas funcionalidades para refatoração de infraestrutura e melhorias em gerenciamento de estado.
-- **Terraform 1.7.0** (14 de novembro de 2023): Foco em segurança e integração com novas plataformas de nuvem.
-- **Terraform 1.8.0** (23 de janeiro de 2024): Introduziu aprimoramentos para gestão de ambientes híbridos e multi-nuvem.
-- **Terraform 1.9.0** (8 de março de 2024): Novas funcionalidades para automação avançada e maior suporte para Kubernetes.
-- **Terraform 1.10.0** (2 de maio de 2024): Introduziu melhorias no desempenho e na interface de linha de comando.
-- **Terraform 1.11.0** (17 de julho de 2024): Melhorias na interoperabilidade entre diferentes nuvens e ambientes on-premises.
-- **Terraform 1.12.0** (20 de setembro de 2024): Foco em maior escalabilidade para grandes infraestruturas.
-- **Terraform 1.13.0** (25 de novembro de 2024): Integração com novas ferramentas de DevOps e otimizações de desempenho.
-- **Terraform 1.14.0** (29 de janeiro de 2025): Novos recursos de monitoramento e melhor integração com serviços de segurança.
-- **Terraform 1.15.0** (15 de março de 2025): Aprimoramentos na gestão de recursos multi-regionais.
-- **Terraform 1.16.0** (10 de maio de 2025): Foco em compatibilidade com novas versões de APIs de provedores de nuvem.
-- **Terraform 1.17.0** (5 de julho de 2025): Melhoria no gerenciamento de grandes volumes de dados em infraestrutura.
-- **Terraform 1.18.0** (22 de setembro de 2025): Introdução de novas funcionalidades para suporte a ambientes serverless.
-- **Terraform 1.19.0** (8 de dezembro de 2025): Foco em automação e integração com novas plataformas de contêineres.
-- **Terraform 1.19.5** (19 de agosto de 2026): Última versão estável, trazendo correções de bugs e melhorias menores.
+1. **Terraform 0.1.0** - 28 de julho de 2014
+2. **Terraform 0.2.0** - 5 de agosto de 2014
+3. **Terraform 0.3.0** - 15 de setembro de 2014
+4. **Terraform 0.4.0** - 28 de outubro de 2014
+5. **Terraform 0.5.0** - 14 de janeiro de 2015
+6. **Terraform 0.6.0** - 9 de junho de 2015
+7. **Terraform 0.7.0** - 2 de agosto de 2016
+8. **Terraform 0.8.0** - 13 de dezembro de 2016
+9. **Terraform 0.9.0** - 29 de março de 2017
+10. **Terraform 0.10.0** - 3 de julho de 2017
+11. **Terraform 0.11.0** - 16 de novembro de 2017
+12. **Terraform 0.12.0** - 22 de maio de 2019
+13. **Terraform 0.13.0** - 10 de agosto de 2020
+14. **Terraform 0.14.0** - 11 de novembro de 2020
+15. **Terraform 0.15.0** - 5 de abril de 2021
+16. **Terraform 1.0.0** - 8 de junho de 2021
+17. **Terraform 1.1.0** - 8 de dezembro de 2021
+18. **Terraform 1.2.0** - 5 de maio de 2022
+19. **Terraform 1.3.0** - 14 de setembro de 2022
+20. **Terraform 1.4.0** - 9 de dezembro de 2022
+21. **Terraform 1.5.0** - 4 de abril de 2023
+22. **Terraform 1.6.0** - 4 de outubro de 2023
+23. **Terraform 1.7.0** - 17 de janeiro de 2024
+24. **Terraform 1.8.0** - 10 de abril de 2024
+25. **Terraform 1.9.0** - 26 de junho de 2024
+26. **Terraform 1.9.5** - 20 de agosto de 2024
+
+Essas versões mostram a evolução da ferramenta ao longo do tempo, refletindo melhorias e novas funcionalidades adicionadas em cada release. A HashiCorp mantém e atualiza o Terraform regularmente para atender às necessidades de gerenciamento de infraestrutura como código (IaC).
