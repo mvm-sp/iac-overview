@@ -134,7 +134,7 @@ provider "google" {
 }
 ```
 
-#### Detalhse da implementação:
+#### Detalhes da implementação:
 
 - **`terraform {}`**: Bloco de configuração global para especificar requisitos e configurações de versões.
 - **`required_providers {}`**: Declara os providers necessários para a configuração. Neste exemplo, são o `aws` e o `google`.
