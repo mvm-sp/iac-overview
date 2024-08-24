@@ -82,7 +82,7 @@ Após executar `terraform init` e um `terraform plan`, a estrutura de pastas e a
 |   └── providers/ 
 │       └── [repositorio]/
 │           └── [provedor]/
-│                └── [fabricante]
+│                └── [fabricante]/
 │                     └── [versao]...
 ├── main.tf
 ├── variables.tf
