@@ -79,7 +79,7 @@ Após executar `terraform init` e um `terraform plan`, a estrutura de pastas e a
 │   |   └── [sistema-operacional]_[arquitetura]/
 │   |       └── [provedor]/
 │   |            └── [plugin].zip
-|   ├── providers/ 
+|   └── providers/ 
 │       └── [repositorio]/
 │           └── [provedor]/
 │                └── [fabricante]
