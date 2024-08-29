@@ -1,0 +1,4 @@
+apendix/Terraform/examples/s3/terraform.tfstate
+apendix/Terraform/examples/s3/terraform.tfstate.backup
+apendix/Terraform/examples/s3/.terraform.lock.hcl
+apendix/Terraform/examples/s3/.terraform/*
