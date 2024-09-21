@@ -155,7 +155,8 @@ jobs:
 Um último passa seria preparar a nossa estrutura para controlar a remoção dos recursos da AWS, para isso precisamos:
 
 - [ ] Criar um arquivo destroy.json na pasta `infra`
-- [ ] Adicionar o step para leitura do json logo após o terraform Init
+- [ ] Adicionar o step para leitura do json logo após o Configure AWS Credentials no arquivo `terraform.yaml`
+- [ ] Criar oo step de Destroy no no arquivo `terraform.yaml` logo após o terraform Init
 
 
 Exemplo do step de leitura do json
@@ -165,5 +166,16 @@ Exemplo do step de leitura do json
         run: |
           DESTROY="$(jq -r '.${{ inputs.environment }}' ./infra/destroy.json)"
           echo "destroy=$(echo $DESTROY)" >> $GITHUB_OUTPUT
+
+```
+
+Exemplo de step de Destroy
+```yaml
+      - name: Terraform Destroy
+        if: steps.read-destroy.outputs.destroy == 'true'
+        id: terraform-destroy
+        run: cd infra &&
+          terraform workspace select ${{ inputs.environment }} || terraform workspace new ${{ inputs.environment }} &&
+          terraform destroy -var-file="./env/${{ inputs.environment }}/terraform.tfvars" -auto-approve
 
 ```
