@@ -11,7 +11,7 @@ Para avançarmos na implementação de pipelines em git actions integradas a AWS
 - [ ] Criar o Arquivo `provider.tf` no diretório `infra`
 - [ ] Criar o Arquivo `variables.tf` no diretório `infra` 
 - [ ] Criar os arquivos `terraform.yaml`, `dev.yaml` e `prod.yaml` no subdiretório `.github/workflows`
-- [ ] Criar os arquivo `beckend.tf`dentro da pasta de `infra`
+- [ ] Criar os arquivo `backend.tf`dentro da pasta de `infra`
 
 
 Conteúdo do arquivo `backend.tf`
@@ -41,3 +41,4 @@ provider "aws" {
   region = "us-east-2"
 }
 ```
+
