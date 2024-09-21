@@ -28,7 +28,7 @@ Além do conteúdo básico do Terraform, o HCP Terraform mantém alguns dados ad
 **Histórico de execução:** Quando o HCP Terraform gerencia as execuções do Terraform de um workspace, ele mantém um registro de todas as atividades de execução, incluindo resumos, registros, uma referência às alterações que causaram a execução e comentários do usuário. Consulte [Viewing and Managing Runs] (/terraform/cloud-docs/run/manage) para obter mais detalhes.
     
 
-A parte superior de cada workspace mostra uma contagem de recursos, que reflete o número de recursos registrados no arquivo de estado do workspace. Isso inclui [recursos](https://developer.hashicorp.com/terraform/language/resources/syntax) e [fontes de dados](https://developer.hashicorp.com/terraform/language/data-sources) gerenciados.
+A parte superior de cada workspace mostra uma contagem de recursos, que reflete o número de recursos registrados no arquivo de estado do workspace. Isso inclui [Resources](https://developer.hashicorp.com/terraform/language/resources/syntax) e [Data Sources](https://developer.hashicorp.com/terraform/language/data-sources) gerenciados.
 
 [Terraform Runs](https://developer.hashicorp.com/terraform/cloud-docs/workspaces#terraform-runs)
 -----------------------------------------------------------------
@@ -63,7 +63,7 @@ No Terraform Enterprise, os administradores podem usar [Admin Settings](https://
 
 Os projetos permitem que você organize seus workspaces em grupos.
 
-**Nota:** No HCP Terraform **Standard** Edition, você pode atribuir permissões de projeto para o escopo de acesso a coleções de workspaces com base em unidades de negócios e responsabilidades. Consulte [Preços do HCP Terraform] (https://www.hashicorp.com/products/terraform/pricing) para obter detalhes.
+**Nota:** No HCP Terraform **Standard** Edition, você pode atribuir permissões de projeto para o escopo de acesso a coleções de workspaces com base em unidades de negócios e responsabilidades. Consulte [Preços do HCP Terraform](https://www.hashicorp.com/products/terraform/pricing) para obter detalhes.
 
 Consulte [Organize Workspaces with Projects](https://developer.hashicorp.com/terraform/cloud-docs/projects/manage) para obter mais detalhes.
 
