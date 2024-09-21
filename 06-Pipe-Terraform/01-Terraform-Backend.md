@@ -48,7 +48,7 @@ Um backend remoto armazena o arquivo de estado em um local centralizado, como um
 
 Um backend remoto é um tipo de backend do Terraform que armazena o arquivo de estado em um local remoto, como um serviço de armazenamento de objetos na nuvem ou um banco de dados.
 
-**Vantagens de usar o backend remoto
+***Vantagens de usar o backend remoto***
 
 O uso de um backend remoto tem várias vantagens, como:
 
@@ -57,7 +57,7 @@ O uso de um backend remoto tem várias vantagens, como:
 * Histórico de alterações, que pode ajudar na solução de problemas e na auditoria.
 * Recursos como bloqueio de estado remoto evitam conflitos e garantem a consistência.
 
-**Exemplos de serviços de backend remoto
+***Exemplos de serviços de backend remoto***
 
 Há vários provedores de backend remoto disponíveis, como:
 
@@ -89,13 +89,13 @@ Neste exemplo, estamos usando o backend S3 e especificando o nome do bucket em q
 Aqui está um exemplo de um bloco de backend para o **azure backend**
 
 ```hcl
-terraform {  
-  backend “azurerm” {  
-    storage_account_name = “myterraformstorageaccount”  
-    nome do contêiner = “tfstate”  
-    key = “terraform.tfstate”  
-    access_key = “myaccesskey”  
-  }  
+terraform {
+  backend "azurerm" {
+    storage_account_name = "myterraformstorageaccount"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+    access_key           = "myaccesskey"
+  }
 }
 ```
 Neste exemplo, estamos usando o tipo de backend `azurerm` e especificando o nome da conta de armazenamento e do contêiner onde queremos armazenar o arquivo de estado. Também estamos fornecendo a chave de acesso para a conta de armazenamento.
@@ -119,9 +119,9 @@ Para configurar um backend local no Terraform, você não precisa fazer nada, po
 terraform {  
   backend “local” {}  
 }
-
+```
 Exemplo:
-
+```hcl
 terraform {  
   backend “local” {  
     path = “terraform.tfstate”  
