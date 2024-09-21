@@ -157,6 +157,7 @@ Um último passa seria preparar a nossa estrutura para controlar a remoção dos
 - [ ] Criar um arquivo destroy.json na pasta `infra`
 - [ ] Adicionar o step para leitura do json logo após o Configure AWS Credentials no arquivo `terraform.yaml`
 - [ ] Criar oo step de Destroy no no arquivo `terraform.yaml` logo após o terraform Init
+- [ ] Adicionar os controle de execução baseados na confiuração de destroy
 
 
 Exemplo do step de leitura do json
