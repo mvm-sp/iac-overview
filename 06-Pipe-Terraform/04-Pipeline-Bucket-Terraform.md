@@ -152,11 +152,11 @@ jobs:
       aws-assume-role-arn: "<ARN da role para executar o terraform na AWS>"
 ```
 
-Um último passa seria preparar a nossa estrutura para controlar a remoção dos recursos da AWS, para isso precisamos:
+Um último passo seria preparar a nossa estrutura para controlar a remoção dos recursos da AWS, para isso precisamos:
 
 - [ ] Criar um arquivo destroy.json na pasta `infra`
 - [ ] Adicionar o step para leitura do json logo após o Configure AWS Credentials no arquivo `terraform.yaml`
-- [ ] Criar oo step de Destroy no no arquivo `terraform.yaml` logo após o terraform Init
+- [ ] Criar o step de Destroy no no arquivo `terraform.yaml` logo após o terraform Init
 - [ ] Adicionar os controle de execução baseados na confiuração de destroy
 
 
