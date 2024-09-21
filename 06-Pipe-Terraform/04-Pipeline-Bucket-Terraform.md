@@ -128,3 +128,26 @@ jobs:
           terraform workspace select ${{ inputs.environment }} || terraform workspace new ${{ inputs.environment }} &&
           terraform apply "${{ inputs.environment }}.plan"
 ```
+
+conteúdo do `dev.yaml` na pasta `.github/workflows`
+```yaml
+name: "Pipeline DEV"
+
+on:
+  push:
+    branches: [ dev ]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform:
+    uses: ./.github/workflows/terraform.yaml
+    with:
+      environment: dev
+      aws-region: "us-east-2"
+      aws-state-s3-bucket: "<nome da bucket para o state."
+      aws-lock-table: "<nome da tabela dynamoDB para controle de lock>"
+      aws-assume-role-arn: "ARN da role para executar o terraform na AWS>"
+```
