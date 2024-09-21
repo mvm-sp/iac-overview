@@ -3,7 +3,7 @@ Construindo uma Pipe de Infra-Estrutua na AWS
 
 Para avançarmos na implementação de pipelines em git actions integradas a AWS, vamos propor o provisionamento de uma Bucket S3, para isso seguiremos os seguintes passos:
 
-- [ ] Utilizar a branch `dev` no repositório com a [pipeline de teste](03-Pipe-Github-AWS.md) configurada
+- [ ] Utilizar a branch `dev` no repositório onde a [pipeline de teste](03-Pipe-Github-AWS.md) foi configurada
 - [ ] Criar uma pasta de Infra-Estrutura no seu repositório com a [pipeline de teste](03-Pipe-Github-AWS.md) configurada
 - [ ] Criar uma pasta `env/dev` e outra `env/prod` dentro da pasta de `infra`
 - [ ] Criar um arquivo `terraform.tfvars` em cada um dos subdiretórios acima
@@ -147,7 +147,23 @@ jobs:
     with:
       environment: dev
       aws-region: "us-east-2"
-      aws-state-s3-bucket: "<nome da bucket para o state."
+      aws-state-s3-bucket: "<nome da bucket para o state>"
       aws-lock-table: "<nome da tabela dynamoDB para controle de lock>"
-      aws-assume-role-arn: "ARN da role para executar o terraform na AWS>"
+      aws-assume-role-arn: "<ARN da role para executar o terraform na AWS>"
+```
+
+Um último passa seria preparar a nossa estrutura para controlar a remoção dos recursos da AWS, para isso precisamos:
+
+- [ ] Criar um arquivo destroy.json na pasta `infra`
+- [ ] Adicionar o step para leitura do json logo após o terraform Init
+
+
+Exemplo do step de leitura do json
+```yaml
+      - name: Read destroy.json
+        id: read-destroy
+        run: |
+          DESTROY="$(jq -r '.${{ inputs.environment }}' ./infra/destroy.json)"
+          echo "destroy=$(echo $DESTROY)" >> $GITHUB_OUTPUT
+
 ```
