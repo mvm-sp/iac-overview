@@ -42,3 +42,14 @@ provider "aws" {
 }
 ```
 
+conteúdo do `terraform.tfvars` de `dev`
+```hcl
+pipe_bucket_prefix = "dev-terraform-bucket-posmack"
+pipe_region = "us-east-2"
+```
+
+conteúdo do `terraform.tfvars` de `prod`
+```hcl
+pipe_bucket_prefix = "prod-terraform-bucket-posmack"
+pipe_region = "us-east-2"
+```
