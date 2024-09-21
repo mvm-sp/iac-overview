@@ -7,7 +7,7 @@ O primeiro passo é criar a estrutura na AWS que suporta a integração com o Gi
 
 Para realizar essa etapa você precisará:
  - [ ] [Criar um provedor de identidade na AWS](../apendix/IdentityProvider/AssumeRole-AWS.md)
- - [ ] Crie uma Bucket em sua conta na AWS para armazenar os estados de execução de su pipeline
+ - [ ] Crie uma Bucket em sua conta na AWS para armazenar os estados de execução de sua pipeline
  - [ ] Crie uma Tabela no DynamoDB para controlar as execuções de sua pipeline
 
 Em seguida crie um repositório na sua conta do Github
@@ -16,7 +16,7 @@ Em seguida crie um repositório na sua conta do Github
  - [ ] Crie 3 Branchs (test, dev e prod)
  - [ ] Clone o repositório e escolha a Branch test
  - [ ] Crie a pasta .github/workflows na raíz do seu repositório
- - [ ] Crie oa arquivo `terraform-aws-test.yaml` dentro do subdiretório workflows
+ - [ ] Crie oa arquivo `terraform-aws-test.yaml` dentro do subdiretório workflows, ajudará bastante ter conhecimentos do formato [YAML](https://github.com/mvm-sp/iac-devops/blob/main/04%20-%20Ansible-Playbook/02-YAML.md)
  - [ ] Crie o arquivo `providers.tf`
  - [ ] Realize o commit e acompanhe o `Actions` no seu repositório do Github
 
