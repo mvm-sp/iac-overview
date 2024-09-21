@@ -53,3 +53,78 @@ conteúdo do `terraform.tfvars` de `prod`
 pipe_bucket_prefix = "prod-terraform-bucket-posmack"
 pipe_region = "us-east-2"
 ```
+
+
+conteúdo do `terraform.yaml` da pasta `.github/workflows`
+
+```yaml
+name: "Terraform Bucket Pipeline"
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+        required: true
+      aws-assume-role-arn:
+        type: string
+        required: true
+      aws-region:
+        type: string
+        required: true
+      aws-state-s3-bucket:
+        type: string
+        required: true
+      aws-lock-table:
+        type: string
+        required: true
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.8.3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ inputs.aws-assume-role-arn }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ inputs.aws-region }}
+
+
+      - name: Terraform Init
+        run: |
+          cd infra && terraform init \
+            -backend-config="bucket=${{ inputs.aws-state-s3-bucket }}" \
+            -backend-config="key=${{ github.event.repository.name }}" \
+            -backend-config="region=${{ inputs.aws-region }}" \
+            -backend-config="dynamodb_table=${{ inputs.aws-lock-table }}"
+
+      - name: Terraform Validate
+        id: terraform-validate
+        run: terraform validate
+
+
+      - name: Terraform Plan
+        id: terraform-plan
+        run: cd infra &&
+          terraform workspace select ${{ inputs.environment }} || terraform workspace new ${{ inputs.environment }} &&
+          terraform plan -var-file="./env/${{ inputs.environment }}/terraform.tfvars" -out="${{ inputs.environment }}.plan"
+
+      - name: Terraform Apply
+        id: terraform-apply
+        run: cd infra &&
+          terraform workspace select ${{ inputs.environment }} || terraform workspace new ${{ inputs.environment }} &&
+          terraform apply "${{ inputs.environment }}.plan"
+```
