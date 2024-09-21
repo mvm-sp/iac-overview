@@ -1,4 +1,7 @@
 
+Criando o Identity Provider na AWS
+======================================
+
 Você já quis iniciar uma alteração em uma conta [Amazon Web Services (AWS)](https://aws.amazon.com/) depois de atualizar um repositório do GitHub ou implantar atualizações em um aplicativo da AWS depois de mesclar um commit, sem o uso de chaves de acesso de usuário [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/)? Se você configurar um provedor de identidade (IdP) [OpenID Connect (OIDC)](https://openid.net/connect/) dentro de uma conta do AWS, poderá usar funções do IAM e credenciais de curto prazo, o que elimina a necessidade de chaves de acesso de usuário do IAM.
 
 Nesta postagem do blog, vamos orientá-lo nas etapas necessárias para configurar um repositório específico do GitHub para assumir uma função individual em uma conta do AWS para realizar alterações. Você aprenderá como criar uma conexão confiável OIDC com escopo para um repositório individual do GitHub e como mapear o repositório para uma função do IAM em sua conta. Você criará a conexão OIDC, a função IAM e a relação de confiança de duas maneiras: com o [AWS Management Console](https://aws.amazon.com/console/) e com a [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/).
